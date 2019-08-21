@@ -1,0 +1,35 @@
+﻿<div class="form-group">
+    <div class="row">
+        <div class="col-md-2" ng-repeat="column in vm.dataTable.dtColumnDefs" ng-init="columnIndex = $index">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="{{column.id}}" checked="{{column.visible}}" ng-click="vm.dataTable.toggleColumn(columnIndex)">
+                <label class="custom-control-label" for="{{column.id}}">{{column.sTitle}}</label>
+            </div>  
+        </div>
+    </div>
+</div>
+
+<table datatable="ng" dt-options="vm.dataTable.dtOptions" dt-column-defs="vm.dataTable.dtColumnDefs"
+    dt-instance="vm.dataTable.dtInstance" class="table table-bordered table-hover table-striped table-background"
+    style="width: 100%">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="employee in vm.dataTable.employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.position}}</td>
+            <td>{{employee.office}}</td>
+            <td>{{employee.startDate}}</td>
+            <td>{{employee.salary}}</td>
+        </tr>
+    </tbody>
+</table>
