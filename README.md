@@ -16,4 +16,4 @@ AngularJS Logger
       localStorage.setItem('environment', 'production');
     }, 1);
 
-![Alt text](https://repository-images.githubusercontent.com/203489432/f0774000-c3fd-11e9-85dc-70402447d210 "AngularJS DataTable")
+![Alt text](https://repository-images.githubusercontent.com/203489432/f0774000-c3fd-11e9-85dc-70402447d210 "AngularJS Logger")
