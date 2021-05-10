@@ -52,7 +52,7 @@
     "hover.css": "^2.3.2",
     "jquery": "^3.4.1",
     "jszip": "^3.2.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "pdfmake": "^0.1.58"
   },
   "devDependencies": {
